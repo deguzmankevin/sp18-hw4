@@ -1,10 +1,19 @@
-<% Cat.all.each do | cat| %>
+<% Cat.all.each do |cat| %>
 	<h1>
 	<%= cat.name%>
 </h1>
 <% end %>
 
 
-<% User.all.each do | user| %>
+<% User.all.each do |user| %>
+	<h2>email:<h2>
 	<%= user.username%>
+
+	<%= user.email%>
+<% end %>
+
+
+<% Todo.all.each do |todo| %>
+	<%= todo.task%>
+	<br/>
 <% end %>
